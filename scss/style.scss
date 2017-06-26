@@ -1,0 +1,37 @@
+@import 'variables';
+@import 'resolutions';
+
+body{
+	font: $font;
+}
+
+#header{
+	h1{
+		background: $background-yellow;
+		color: $text-light,
+	}
+}
+
+#menu{
+	li{
+		background: $background-gray;
+		color: $text-light;
+	}
+
+	li:hover{
+		background: $background-yellow;
+	}
+}
+
+.aside{
+	background: $background-gray;
+	color: $text-light;
+	text-align: center;
+}
+
+#footer{
+	background: $background-gray;
+	p{
+		color: $text-light;
+	}
+}
