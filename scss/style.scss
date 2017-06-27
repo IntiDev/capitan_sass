@@ -3,7 +3,6 @@
 
 body{
 	font-family: $font;
-	height: 100vh;
 }
 
 /*GLOBAL*/
@@ -77,29 +76,6 @@ body{
   /* (12/12)*100 */
   width: 100%;
 }
-/*Estilos flexbox*/
-// .flex-container {
-//   padding: 0;
-//   margin: 0;
-//   // list-style: none;
-//
-//   display: -webkit-box;
-//   display: -moz-box;
-//   display: -ms-flexbox;
-//   display: -webkit-flex;
-//   display: flex;
-//
-//   -webkit-flex-flow: row wrap;
-//   justify-content: space-around;
-// }
-
-// .flex-item {
-// 	display: block;
-//   padding: 2%;
-//   // width: 150px;
-//   // height: 200px;
-//   // margin: 7% 3%;
-// }
 
 #header{
 	background: $background-yellow;
@@ -110,8 +86,6 @@ body{
 }
 
 #menu{
-	// width: 30%;
-	// margin: 0;
 	li{
 		background: $background-gray;
 		color: $text-light;
@@ -123,12 +97,14 @@ body{
 	}
 }
 
-#contenido{
-	// width: 30%;
+#lista-asistencia{
+	list-style: none;
+	li{
+		margin-left: $margin-l;
+	}
 }
 
 .aside{
-	// width: 40%;
 	left: 0;
 	background: $background-gray;
 	color: $text-light;
@@ -140,5 +116,34 @@ body{
 	padding: $pad-tb;
 	p{
 		color: $text-light;
+	}
+}
+
+// MEDIA QUERIES
+@media  (max-width: 768px){//Media para tablets
+	#contenedorMenu{
+		width: 40%;
+	}
+
+	#contenido{
+		width: 60%;
+	}
+
+	#contenedorAside{
+		width: 100%;
+	}
+}
+
+@media  (max-width: 460px){//Media para móviles
+	#contenedorMenu{
+		width: 100%;
+	}
+
+	#contenido{
+		width: 100%;
+	}
+
+	#contenedorAside{
+		width: 100%;
 	}
 }

@@ -6,7 +6,7 @@ var api = {
 
 var $listaAlumnas = $("#lista-asistencia");//Se manda llamar el elemento HTML en el que se crearám los items
 
-var plantillaNombre = '<li> <input type="checkbox"> __nombre__   </li>';
+var plantillaNombre = '<li> __id__ .<input type="checkbox"> __nombre__ __apeP___ __apeM__</li>';
 
 var cargarPagina = function (){
 	cargarApi();
@@ -21,12 +21,15 @@ var cargarApi = function (){
 
 var crearItem = function (alumna){
 	//Se obtiene la propiedad name de cada objeto de la api
+	var id = alumna.id;
 	var nombre = alumna.name;
+	var apeP = alumna.pLastName;
+	var apeM = alumna.mLastName;
 	// console.log(nombre);
 
 	// Se reemplaza valor en la plantilla
 	var itemAsistencia = "";
-	itemAsistencia += plantillaNombre.replace('__nombre__', nombre);
+	itemAsistencia += plantillaNombre.replace('__id__',id).replace('__nombre__', nombre).replace('__apeP___',apeP).replace('__apeM__',apeM);
 
 	//Se agregan nombres a la lista
 	$listaAlumnas.append(itemAsistencia);

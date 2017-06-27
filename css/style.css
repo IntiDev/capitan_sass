@@ -1,6 +1,5 @@
 body {
-  font-family: "Open Sans", "sans-serif";
-  height: 100vh; }
+  font-family: "Open Sans", "sans-serif"; }
 
 /*GLOBAL*/
 * {
@@ -61,7 +60,6 @@ body {
   /* (12/12)*100 */
   width: 100%; }
 
-/*Estilos flexbox*/
 #header {
   background: #EBB85D;
   padding: 1% 0 1% 1%; }
@@ -75,6 +73,11 @@ body {
 #menu li:hover {
   background: #EBB85D; }
 
+#lista-asistencia {
+  list-style: none; }
+  #lista-asistencia li {
+    margin-left: 5%; }
+
 .aside {
   left: 0;
   background: #3E3F40;
@@ -86,5 +89,24 @@ body {
   padding: 1% 0 1% 1%; }
   #footer p {
     color: white; }
+
+@media (max-width: 768px) {
+  #contenedorMenu {
+    width: 40%; }
+
+  #contenido {
+    width: 60%; }
+
+  #contenedorAside {
+    width: 100%; } }
+@media (max-width: 460px) {
+  #contenedorMenu {
+    width: 100%; }
+
+  #contenido {
+    width: 100%; }
+
+  #contenedorAside {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
