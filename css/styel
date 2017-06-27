@@ -1,0 +1,24 @@
+body {
+  font: Helvetica, Arial; }
+
+#header h1 {
+  background: #EBB85D;
+  color: white; }
+
+#menu li {
+  background: #3E3F40;
+  color: white; }
+#menu li:hover {
+  background: #EBB85D; }
+
+.aside {
+  background: #3E3F40;
+  color: white;
+  text-align: center; }
+
+#footer {
+  background: #3E3F40; }
+  #footer p {
+    color: white; }
+
+/*# sourceMappingURL=styel.map */
